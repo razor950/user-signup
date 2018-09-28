@@ -11,12 +11,16 @@
       <form action="/signup" method="post">
         <input type="text" placeholder="username" name="username" id="username" value="{{
           username }}">
+        <td><p class="error">{{username_error}}</p></td>
         <input type="password" placeholder="password" name="password" value="{{
           password }}">
+        <td><p class="error">{{password_error}}</p></td>
         <input type="password" placeholder="verify_password" name="verify_password" value="{{
           verify_password }}">
+        <td><p class="error">{{verify_error}}</p></td>
         <input type="text" placeholder="Email" name="email" value="{{
           email }}">
+        <td><p class="error">{{email_error}}</p></td>
         <input class="btn btn-default" type="submit" value="Login">
       </form>
       {% if error %}
